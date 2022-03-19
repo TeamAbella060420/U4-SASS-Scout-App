@@ -1,0 +1,108 @@
+/* VARIABLES ------------------------------------ */
+/* HEADER & FOOTER -------------------------------- */
+header {
+  height: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#009fe1), to(#3acec2));
+  background: linear-gradient(#009fe1, #3acec2);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 4.8em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  color: #eeea72;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+footer {
+  padding: 2em 0 0;
+  height: 100px;
+  background-color: #eee;
+  margin-top: 3.5em;
+}
+
+/* COMPONENTS ------------------------------------- */
+.main-nav {
+  margin-top: 1em;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 0.65em;
+}
+
+.main-nav a {
+  font-size: 0.85em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #eeea72;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5em 1em;
+  border: 1px solid #eee;
+  border-radius: 0.25em;
+}
+
+.card h1 {
+  margin: 0.35em 0 0;
+  line-height: 1.25;
+}
+
+.card .icon {
+  color: #278da4;
+}
+
+/* MEDIA QUERIES ---------------------------------- */
+@media (max-width: 575px) {
+  header {
+    height: 340px;
+  }
+  header h1 {
+    font-size: 3.4em;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    background-position: 0 0, 0 45%;
+  }
+  .intro {
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
